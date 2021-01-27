@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,225 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpyTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Office-CoinStack" translatesAutoresizingMaskIntoConstraints="NO" id="IoG-eC-cyp">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRi-l5-YmZ">
+                                <rect key="frame" x="432" y="316" width="22" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="spD-uA-DMG" kind="show" id="rfK-l1-OL9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 - Find the Stack of Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUP-GB-giF">
+                                <rect key="frame" x="44" y="356" width="348" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IoG-eC-cyp" secondAttribute="trailing" id="0uH-BH-i3m"/>
+                            <constraint firstItem="IoG-eC-cyp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vk4-mB-kW6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IoG-eC-cyp" secondAttribute="bottom" id="pOy-vY-8Aw"/>
+                            <constraint firstItem="IoG-eC-cyp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vLp-8a-P4H"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gon-OV-kH2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.61607142857142" y="114.49275362318842"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hOY-qT-2De">
+            <objects>
+                <viewController id="spD-uA-DMG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VUo-g7-ZY0">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Graveyard-Bumblebee" translatesAutoresizingMaskIntoConstraints="NO" id="mrX-rD-I5P">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gk-w4-kF2">
+                                <rect key="frame" x="398" y="10" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="TIO-Uw-Ofd" kind="show" id="hO5-i5-UFC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 - Find the BumbleBee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auu-pX-62r">
+                                <rect key="frame" x="44" y="356" width="313" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mrX-rD-I5P" firstAttribute="leading" secondItem="rhB-eP-xGU" secondAttribute="leading" id="Idm-UZ-2IO"/>
+                            <constraint firstItem="mrX-rD-I5P" firstAttribute="top" secondItem="rhB-eP-xGU" secondAttribute="top" id="X1X-kb-2rQ"/>
+                            <constraint firstItem="rhB-eP-xGU" firstAttribute="bottom" secondItem="mrX-rD-I5P" secondAttribute="bottom" id="Xp5-EB-JXn"/>
+                            <constraint firstItem="rhB-eP-xGU" firstAttribute="trailing" secondItem="mrX-rD-I5P" secondAttribute="trailing" id="g7j-QX-TVF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rhB-eP-xGU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dPL-1z-NX7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smE-dS-NFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="828"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gm3-se-4NB">
+            <objects>
+                <viewController id="TIO-Uw-Ofd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zL6-qm-G8I">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeirdRoom-Lighter" translatesAutoresizingMaskIntoConstraints="NO" id="tQZ-SH-rNI">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 - Find the Lighter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3O-Bn-96K">
+                                <rect key="frame" x="44" y="356" width="254" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0j-oo-pwP">
+                                <rect key="frame" x="741" y="361" width="46" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <connections>
+                                    <segue destination="fym-Sz-lna" kind="show" id="k2t-IV-4CY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tQZ-SH-rNI" firstAttribute="leading" secondItem="OWh-Og-4Mz" secondAttribute="leading" id="GG4-F1-KZb"/>
+                            <constraint firstItem="tQZ-SH-rNI" firstAttribute="top" secondItem="OWh-Og-4Mz" secondAttribute="top" id="e2i-Tw-zFw"/>
+                            <constraint firstItem="OWh-Og-4Mz" firstAttribute="bottom" secondItem="tQZ-SH-rNI" secondAttribute="bottom" id="rXw-eT-SJV"/>
+                            <constraint firstItem="OWh-Og-4Mz" firstAttribute="trailing" secondItem="tQZ-SH-rNI" secondAttribute="trailing" id="teK-yc-Gnn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OWh-Og-4Mz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EoS-va-g9c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWy-BJ-Wws" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.53571428571428" y="1556.521739130435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3hm-sX-AFd">
+            <objects>
+                <viewController id="fym-Sz-lna" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3fC-x3-Cua">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Garage-Tarantula" translatesAutoresizingMaskIntoConstraints="NO" id="LkY-Wd-blS">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re7-J5-C3o">
+                                <rect key="frame" x="785" y="168" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="uZt-Hv-AwV" kind="show" id="Eff-Cp-ggK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final - Find the Spider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQG-ld-yCU">
+                                <rect key="frame" x="44" y="356" width="291" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JBb-Fi-u4g" firstAttribute="trailing" secondItem="LkY-Wd-blS" secondAttribute="trailing" id="U7r-lh-HYm"/>
+                            <constraint firstItem="LkY-Wd-blS" firstAttribute="top" secondItem="JBb-Fi-u4g" secondAttribute="top" id="ZJF-xm-xs5"/>
+                            <constraint firstItem="LkY-Wd-blS" firstAttribute="leading" secondItem="JBb-Fi-u4g" secondAttribute="leading" id="bdh-4W-ldG"/>
+                            <constraint firstItem="JBb-Fi-u4g" firstAttribute="bottom" secondItem="LkY-Wd-blS" secondAttribute="bottom" id="hDs-2P-sTW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JBb-Fi-u4g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0uO-uB-yS7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dV4-4T-oz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.83928571428571" y="2300"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ESJ-aD-xMy">
+            <objects>
+                <viewController id="uZt-Hv-AwV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O38-uN-obJ">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Found All of the Objects!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IR-WG-mxJ">
+                                <rect key="frame" x="287" y="127" width="323" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRb-2A-Hrh">
+                                <rect key="frame" x="427" y="185" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTC-r3-BVo">
+                                <rect key="frame" x="369" y="185" width="163" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Press Me To Play Again!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ojy-vX-PIh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg7-xA-FlY">
+                                <rect key="frame" x="223" y="41" width="451" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UDH-av-Dv4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GsJ-Df-cZB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIw-mM-g3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.46428571428571" y="3004.347826086957"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Garage-Tarantula" width="756" height="480"/>
+        <image name="Graveyard-Bumblebee" width="756" height="480"/>
+        <image name="Office-CoinStack" width="1280" height="812"/>
+        <image name="WeirdRoom-Lighter" width="756" height="480"/>
+    </resources>
 </document>
